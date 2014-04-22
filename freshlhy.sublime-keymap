@@ -12,4 +12,10 @@
     "args": {
         "file": "Packages/Default/Delete Line.sublime-macro"
     }
-}]
+}, {
+    "keys": ["f1"],
+    "command": "goto_definition"
+}, {
+    "keys": ["f2"],
+    "command": "jump_back"
+}, ]
