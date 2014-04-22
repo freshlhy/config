@@ -1,22 +1,15 @@
-[
-	{ "keys": ["ctrl+s"], "command": "save" },
-
-	{ "keys": ["ctrl+x"], "command": "cut" },
-	{ "keys": ["ctrl+c"], "command": "copy" },
-	{ "keys": ["ctrl+v"], "command": "paste" },
-
-	{ "keys": ["super+q"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-
-	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
-	{ "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
-
-	{ "keys": ["ctrl+z"], "command": "undo" },
-	{ "keys": ["ctrl+shift+z"], "command": "redo" },
-
-	{ "keys": ["f1"], "command": "goto_definition" },
-	{ "keys": ["f2"], "command": "jump_back" },
-	
-	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line.sublime-macro"} },
-
-	{ "keys": ["ctrl+shift+f"], "command": "reindent" , "args": {"single_line": false}}
-]
+[{
+    "keys": ["ctrl+shift+f"],
+    "command": "jsbeautify",
+    "context": [{
+        "key": "selector",
+        "operator": "equal",
+        "operand": "source.js,source.json,source.jade"
+    }]
+}, {
+    "keys": ["command+d"],
+    "command": "run_macro_file",
+    "args": {
+        "file": "Packages/Default/Delete Line.sublime-macro"
+    }
+}]
