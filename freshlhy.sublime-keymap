@@ -7,7 +7,7 @@
         "operand": "source.js,source.json,source.jade"
     }]
 }, {
-    "keys": ["command+d"],
+    "keys": ["ctrl+d"],
     "command": "run_macro_file",
     "args": {
         "file": "Packages/Default/Delete Line.sublime-macro"
@@ -18,4 +18,31 @@
 }, {
     "keys": ["f2"],
     "command": "jump_back"
-}, ]
+}, {
+  "keys": ["`"],
+  "command": "move_to",
+  "args": {
+    "to": "eol",
+    "extend": false
+  }
+}, {
+  "keys": ["alt+j"],
+  "command": "move",
+  "args": {
+    "by": "words",
+    "forward": false
+  }
+}, {
+  "keys": ["alt+k"],
+  "command": "move",
+  "args": {
+    "by": "word_ends",
+    "forward": true
+  }
+}, {
+  "keys": ["alt+d"],
+  "command": "delete_word",
+  "args": {
+    "forward": true
+  }
+}]
