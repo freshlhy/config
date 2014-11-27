@@ -1,23 +1,12 @@
 [{
-    "keys": ["ctrl+shift+f"],
-    "command": "jsbeautify",
-    "context": [{
-        "key": "selector",
-        "operator": "equal",
-        "operand": "source.js,source.json,source.jade"
-    }]
+  "keys": ["ctrl+shift+f"],
+  "command": "beautify_ruby"
 }, {
-    "keys": ["ctrl+d"],
-    "command": "run_macro_file",
-    "args": {
-        "file": "Packages/Default/Delete Line.sublime-macro"
-    }
-}, {
-    "keys": ["f1"],
-    "command": "goto_definition"
-}, {
-    "keys": ["f2"],
-    "command": "jump_back"
+  "keys": ["ctrl+d"],
+  "command": "run_macro_file",
+  "args": {
+    "file": "Packages/Default/Delete Line.sublime-macro"
+  }
 }, {
   "keys": ["`"],
   "command": "move_to",
